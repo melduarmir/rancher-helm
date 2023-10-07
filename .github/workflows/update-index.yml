@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - '**.tgz'
+      - '.github/workflows/update-index.yml'
 
 jobs:
   build:
