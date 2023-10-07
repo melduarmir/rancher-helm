@@ -19,6 +19,8 @@ jobs:
       - name: Update Index
         run: |
           helm repo index .
+          git config --global user.email "melduarmir@gmail.com"
+          git config --global user.name "melduarmir"
           git add index.yaml
           git commit -m "Update chart index"
           git push
